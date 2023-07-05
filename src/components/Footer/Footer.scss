@@ -1,0 +1,42 @@
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: #eb5757;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish";
+  font-weight: 600;
+  color: white;
+  transform: translateY(100%);
+  transition: all 400ms ease;
+  a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    span.material-icons {
+      font-size: 15px;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+footer.active {
+  transition: all 500ms ease;
+
+  transform: translateY(0);
+}
