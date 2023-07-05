@@ -37,6 +37,11 @@ footer {
 
 footer.active {
   transition: all 500ms ease;
-
   transform: translateY(0);
+}
+
+@media only screen and (max-width: 450px) {
+  footer {
+    font-size: 14px;
+  }
 }
